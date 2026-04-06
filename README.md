@@ -67,7 +67,8 @@ Perfect for demonstrating multi-agent system design, full-stack development skil
 
 1. **Clone the repository**
    ```bash
-   cd /home/fakhera/Development/marketintel-ai-engine
+   git clone https://github.com/fakheramansuri8/Financial-Research-Assistant.git
+   cd Financial-Research-Assistant
    ```
 
 2. **Create virtual environment**
@@ -208,23 +209,6 @@ See `LLM_CONFIG_GUIDE.md` for detailed setup instructions for each provider.
 
 By default, all agents use the same LLM. You can customize individual agents by editing the agent files in `agents/` directory.
 
-## 🌐 Deployment
-
-### Deploy to Render (Free Tier)
-
-1. Push code to GitHub
-2. Connect repository to Render
-3. Add environment variables in Render dashboard
-4. Deploy!
-
-See `render.yaml` in the plan for configuration details.
-
-### Deploy to Hugging Face Spaces
-
-1. Create a new Space at https://huggingface.co/spaces
-2. Choose "Streamlit" as SDK
-3. Upload your code
-4. Add secrets (API keys) in Space settings
 
 ## 🎓 What This Demonstrates
 
@@ -267,15 +251,7 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 
 MIT License - feel free to use this for learning, portfolio projects, or commercial applications.
 
-## 🙏 Acknowledgments
 
-- CrewAI team for the excellent agent orchestration framework
-- Tavily for providing powerful search API
-- Yahoo Finance for free financial data access
-- Google Gemini for fast, cost-effective LLM inference
-
----
-
-**Built with ❤️ for the Australian fintech community**
+**Built with ❤️ for the Fintech community**
 
 For questions or feedback, please open an issue on GitHub.
