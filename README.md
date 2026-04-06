@@ -1,3 +1,12 @@
+---
+title: Financial Research Assistant
+emoji: 📊
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+---
+
 # 📊 Multi-Agent Financial Research Assistant
 
 An AI-powered investment research system that automatically generates professional equity research reports using a multi-agent architecture.
@@ -209,6 +218,19 @@ See `LLM_CONFIG_GUIDE.md` for detailed setup instructions for each provider.
 
 By default, all agents use the same LLM. You can customize individual agents by editing the agent files in `agents/` directory.
 
+## 🌐 Deployment
+
+### Deploy to Hugging Face Spaces (Recommended)
+
+1. **Create a Space**: Go to [huggingface.co/spaces](https://huggingface.co/spaces) and create a new Space.
+2. **Select SDK**: Choose **Streamlit** as your SDK.
+3. **Upload Code**: Upload your repository files (directly or via Git).
+4. **Configure Secrets**:
+   - Go to your Space **Settings** -> **Variables and Secrets**.
+   - Add your `TAVILY_API_KEY` and `GEMINI_API_KEY` as **Secrets**.
+5. **Launch**: The Space will automatically build and launch!
+
+---
 
 ## 🎓 What This Demonstrates
 
@@ -217,40 +239,17 @@ This project showcases:
 1. **Multi-Agent System Design**: Practical CrewAI implementation with task delegation
 2. **Tool Integration**: Custom wrappers for external APIs (Tavily, yfinance)
 3. **Full-Stack Development**: FastAPI backend + Streamlit frontend
-4. **Production Practices**: Error handling, environment config, testing, deployment readiness
-5. **Business Acumen**: Solves real-world problem (investment research automation)
-6. **Live Demo Capability**: Type "Telstra" → watch agents work → get professional report
+4. **Production Practices**: Error handling, environment config, and cloud deployment readiness
+5. **Business Acumen**: Solves a real-world problem (investment research automation)
 
-Perfect for portfolio projects and technical interviews in fintech/AI roles!
+---
 
-## 🛠️ Tech Stack
+## 🙏 Acknowledgments
 
-- **Agent Framework**: CrewAI
-- **Backend**: FastAPI, Uvicorn
-- **Frontend**: Streamlit
-- **LLM Routing**: LiteLLM (supports 100+ providers)
-- **Data Sources**: Tavily API (news), Yahoo Finance (financials)
-- **Testing**: pytest
-
-## 📝 API Documentation
-
-Once the backend is running, visit:
-- **Swagger UI**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
-
-### Endpoints
-
-- `GET /health` - Health check
-- `POST /research` - Generate research report
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-## 📄 License
-
-MIT License - feel free to use this for learning, portfolio projects, or commercial applications.
-
+- **CrewAI**: For the excellent agent orchestration framework
+- **Tavily**: For the powerful search API
+- **Yahoo Finance**: For reliable financial data access
+- **Google Gemini**: For fast, cost-effective LLM inference
 
 **Built with ❤️ for the Fintech community**
 
